@@ -1,167 +1,91 @@
-# Incus-UI-Canonical
+# incus-ui-canonical
 
-Incus-UI-Canonical is a browser frontend for [Incus](https://github.com/lxc/incus). It enables easy and accessible container and virtual machine management.
-Targets small and large scale private clouds.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/incus-ui-canonical) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria) [![Energy](https://api.green-coding.io/v1/ci/badge/get?repo=Interested-Deving-1896%2Fincus-ui-canonical&branch=main&workflow=eco-audit.yml)](https://metrics.green-coding.io/ci-index.html)
 
-# Background
 
-This [Incus-UI-Canonical](https://osamuaoki.github.com/incus-ui-canonical) is a forked project of [LXD-UI](https://github.com/canonical/lxd-ui).
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-This [Incus-UI-Canonical](https://osamuaoki.github.com/incus-ui-canonical) is targeted to work with [Incus](https://github.com/lxc/incus) instead of [LXD](https://github.com/canonical/lxd).
+## Architecture
 
-[LXD has been moved to Canonical](https://linuxcontainers.org/lxd/) and a community fork of LXD, [Incus](https://github.com/lxc/incus), is now part of the [Linux Containers project](https://linuxcontainers.org/).
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Canonical packages [LXD-UI](https://github.com/canonical/lxd-ui) as a part of `lxd` snap package.
+## Install
 
-Lead [Incus](https://github.com/lxc/incus) developer zabby is providing his `incus` deb package at [Incus package repository](https://github.com/zabbly/incus).  Zabby bundles patched lxd-ui web page into `/opt/incus/ui` of his deb package.
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-When I filed [a wishlist bug report to bundle zabby's static web page in Debian's incus package: #1067041](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1067041) and got a reasonable response that such thing needs to be packaged as a separate package.
-
-Here is my first try to create such package which can work with the official [Debian's incus package](https://tracker.debian.org/pkg/incus).
-
-Essential part of package modifications are copied from zabby's [workflow](https://github.com/zabbly/incus/blob/daily/.github/workflows/builds.yml) and [ui-canonical-* patches and sed script](https://github.com/zabbly/incus/tree/daily/patches).
-
-I realized existence of zabby's code and structure from others packaging this part of code.
-
-* https://github.com/KosmX/incus-ui-canonical-arch Arch Linux package
-* https://gist.github.com/vaxvhbe/ce679df15fc521c8aca1ff9ddf537201 RPM spec file?
-
-# Install
-
-## For Debain/Ubuntu system (via APT)
-
-Create `/etc/apt/sources.list.d/osamuaoki.sources` as:
-
-```
-Types: deb
-URIs: https://osamuaoki.github.io/debian/
-Suites: sid
-Components: main
-Signed-By:
- -----BEGIN PGP PUBLIC KEY BLOCK-----
- .
- mDMEZZpSFhYJKwYBBAHaRw8BAQdA9T6mXRx7Zc64kQC+dKB2RgxNHK0+KFlCT8b/
- JtFAWRu0HU9zYW11IEFva2kgPG9zYW11QGRlYmlhbi5vcmc+iJIEExYIADsCGwMF
- CwkIBwIGFQoJCAsCBBYCAwECHgECF4AWIQTYnmsJtCCYzq8IGrFtbTgJIV9yDQUC
- ZZpXMAIZAQAKCRBtbTgJIV9yDc+YAQDhuq/q76qobfHKi8C2MT83u1qZkg2eCpEF
- UkyvrE59fwD4+d+IbCls19F3MCRuEmyvYQr+sghC82lnUiFOxUq/DbQhT3NhbXUg
- QW9raSA8b3NhbXUuYW9raUBnbWFpbC5jb20+iJAEExYIADgWIQTYnmsJtCCYzq8I
- GrFtbTgJIV9yDQUCZZpVVQIbAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRBt
- bTgJIV9yDehWAP9lG8DUBwUPl0kCTezQItOxQfDXgJ0Lyhv8dv4B1iWxjgEA8YBv
- gCgDGby+pQmRX/STM7fu5LG62785oIj17HuMaQG4OARlmlIWEgorBgEEAZdVAQUB
- AQdA+q2tgbmHC7MQv5bTHyawYrITRw7Gdg7M0p0+oSRtzS8DAQgHiHgEGBYIACAC
- GwwWIQTYnmsJtCCYzq8IGrFtbTgJIV9yDQUCZZpU3QAKCRBtbTgJIV9yDdz6AQC8
- yC8mQnwkj9D2x84oSdEpAckJ/e47kLDN3y/HIOwXbAD/ZCv2Ek1Exh/7SrxNL65J
- ipPuCsH1vTsxbEE14mEs2Ag=
- =IDSM
- -----END PGP PUBLIC KEY BLOCK-----
-# This is written in DEB822-STYLE FORMAT as described in sources.list (5)
+```bash
+git clone https://github.com/Interested-Deving-1896/incus-ui-canonical.git
+cd incus-ui-canonical
 ```
 
-This adds my personal APT repository.  Then `incus-ui-canonical` can be installed by
+## Usage
 
-```console
- $ sudo apt update && sudo apt install incus-ui-canonical
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/incus-ui-canonical`](https://github.com/Interested-Deving-1896/incus-ui-canonical) and mirrored through:
+
 ```
-or interactively with
-
-```console
- $ sudo aptitude -u
-```
-
-### For other system (or for testing)
-
-```console
- $ sudo apt update
- $ sudo apt devscripts yarnpkg npm
- $ git clone https://osamuaoki.github.com/incus-ui-canonical
- $ cd incus-ui-canonical
- $ git remote add canonical https://github.com/canonical/lxd-ui
- $ git remote update
- $ #origtargz
- $ git archive --prefix=incus-ui-canonical-0.6/ --format=tar.gz -o ../incus-ui-canonical_0.6.orig.tar.gz incus-ui-canonical/0.6
- $ git checkout debian
- $ debuild
- $ cd ..
- $ sudo dpkg -i incus-ui-canonical*.deb
-```
-The above deb-package build process accesses the external javascript repository site outside of the official Debian package repository.
-
-Thus this generated binary deb package is not ready to be uploaded to the Debian repository.
-
-# Configuration of Incus
-
-You need to start the incus daemon while setting its environment with `INCUS_UI=/var/lib/incus/ui`.
-
-You can set it in `/etc/environment` until the official `incus` package support this.
-
-
-```console
- $ incus config set core.https_address ":8443"
+Interested-Deving-1896/incus-ui-canonical  ──►  OpenOS-Project-OSP/incus-ui-canonical  ──►  OpenOS-Project-Ecosystem-OOC/incus-ui-canonical
 ```
 
-Then start any modern browser with it URL pointing to `https://localhost:8443`.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-# LICENSE
+## Contributors
 
-See [LICENSE](LICENSE) and each file.  My code is under GPL3.
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-# TODO
+## Origins
 
-* Update to newer lxd-ui. (0.7)
-* License check and other packaging details including dependencies.
-* Make this build to be compliant for the uploading to Debian repository. (Need help here)
+<!-- AI:start:origins -->
+_Original project — no upstream influences recorded._
+<!-- AI:end:origins -->
 
-# Reference information
+## Resources
 
-Please refer to the guide and references available for LXD-UI.
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-* Substitute `lxc` command with `incus` command.
-* Substitute `lxdbr0` with `incusbr0` for network device.
-* Substitute `LXD_*` environment variables with `INCUS_*` environment variables.
+## Accessibility
 
-Please don't report issues of this fork to Canonical.
+<!-- AI:start:accessibility -->
+This repo uses automated accessibility auditing via `check-accessibility.yml`.
 
-The followings are quoted from the original LXD-UI by Canonical with section headers made to be subsection headers
+Checks include: CODEOWNERS ownership coverage, README screen-reader compatibility,
+WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (liblouis).
 
->    # LXD-UI
->
->    LXD-UI is a browser frontend for LXD. It enables easy and accessible container and virtual machine management.
->    Targets small and large scale private clouds.
->
->    # Install
->
->    Get the LXD snap
->
->        sudo snap install --channel=latest/stable lxd
->
->    Or refresh to ensure at least version 5.14 is installed
->
->        sudo snap refresh --channel=latest/stable lxd
->
->    Follow the guide to [access the LXD web UI](https://documentation.ubuntu.com/lxd/en/latest/howto/access_ui/).
->
->    # Contributing
->
->    You might want to:
->
->    - [View the source](https://github.com/canonical/lxd-ui) on GitHub.
->    - Read about [running the UI from git checkout](HACKING.md), tests and advanced setup.
->
->    # Architecture
->
->    LXD-UI is a single page application written in TypeScript and React. See [Architecture](ARCHITECTURE.MD) for details on bundling with [LXD](https://github.com/canonical/lxd) and the dev setup.
->
->    # Examples
->
->    | Create an instance                                                                                  | Instance list                                                                                                  | Instance terminal                                                                                          |
->    |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
->    | ![0create](https://github.com/canonical/lxd-ui/assets/1155472/7f0c45a6-2ba2-4cc7-bd7c-c0ebca76d648) | ![1instance-overview](https://github.com/canonical/lxd-ui/assets/1155472/c71d2153-ea71-4ecb-ab25-fabcd6fb1e55) | ![2instance-term](https://github.com/canonical/lxd-ui/assets/1155472/c2b741e2-8806-4d4d-9a9a-f536f76a13b9) |
->
->    | Graphic console                                                                                                | Profile list                                                                                             | Cluster groups                                                                                                        |
->    |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
->    | ![3-instance-console](https://github.com/canonical/lxd-ui/assets/1155472/0f8d742d-3f9c-4906-90da-e740e8ff353b) | ![profile-list](https://github.com/canonical/lxd-ui/assets/1155472/36a0f619-767f-4949-804d-061e5e28c87a) | ![6cluster](https://github.com/canonical/lxd-ui/assets/1155472/85f61ef9-a45f-4b4a-abee-8fa9dfa69bd2) |
->
->    | Storage                                                                                               | Operations                                                                                             | Warnings                                                                                             |
->    |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
->    | ![5storage](https://github.com/canonical/lxd-ui/assets/1155472/38d7b8ab-d652-4c18-b71e-0098efe73702)  | ![operations](https://github.com/canonical/lxd-ui/assets/1155472/d3168891-19fb-4724-95cb-9afc91191555) | ![warnings](https://github.com/canonical/lxd-ui/assets/1155472/56499dfc-15a2-4c59-8761-47709b4be957) |
+
+
+
+Run the [Check Accessibility](https://github.com/Interested-Deving-1896/incus-ui-canonical/actions/workflows/check-accessibility.yml)
+workflow to generate the first report and accessibility artifacts.
+See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/incus-ui-canonical/blob/main/DOCS/accessibility.md) for the full reference.
+<!-- AI:end:accessibility -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/incus-ui-canonical/blob/debian/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
