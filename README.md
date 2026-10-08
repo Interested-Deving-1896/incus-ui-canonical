@@ -54,7 +54,24 @@ Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-
 ## Contributors
 
 <!-- AI:start:contributors -->
-_Contributors pending._
+| Contributor | Commits |
+|---|---|
+| [@edlerd](https://github.com/edlerd) | 520 |
+| [@lorumic](https://github.com/lorumic) | 218 |
+| [@renovate[bot]](https://github.com/apps/renovate) | 51 |
+| [@MasWho](https://github.com/MasWho) | 34 |
+| [@stgraber](https://github.com/stgraber) | 6 |
+| [@osamuaoki](https://github.com/osamuaoki) | 5 |
+| [@xlmnxp](https://github.com/xlmnxp) | 5 |
+| [@Interested-Deving-1896](https://github.com/Interested-Deving-1896) | 2 |
+| [@JacobCoffee](https://github.com/JacobCoffee) | 2 |
+| [@yurii-vasyliev](https://github.com/yurii-vasyliev) | 2 |
+| [@aaryanporwal](https://github.com/aaryanporwal) | 1 |
+| [@KryptXBSA](https://github.com/KryptXBSA) | 1 |
+| [@samhotep](https://github.com/samhotep) | 1 |
+| [@nottrobin](https://github.com/nottrobin) | 1 |
+| [@mas-who](https://github.com/mas-who) | 1 |
+| [@rubinaga](https://github.com/rubinaga) | 1 |
 <!-- AI:end:contributors -->
 
 ## Origins
@@ -82,7 +99,8 @@ WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (lib
 
 Run the [Check Accessibility](https://github.com/Interested-Deving-1896/incus-ui-canonical/actions/workflows/check-accessibility.yml)
 workflow to generate the first report and accessibility artifacts.
-See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/incus-ui-canonical/blob/main/DOCS/accessibility.md) for the full reference.
+See the [W3C Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)
+for the underlying accessibility reference.
 <!-- AI:end:accessibility -->
 
 ## License
