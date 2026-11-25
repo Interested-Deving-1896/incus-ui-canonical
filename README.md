@@ -69,7 +69,7 @@ Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-
 |---|---|
 | [@edlerd](https://github.com/edlerd) | 520 |
 | [@lorumic](https://github.com/lorumic) | 218 |
-| [@Interested-Deving-1896](https://github.com/Interested-Deving-1896) | 52 |
+| [@Interested-Deving-1896](https://github.com/Interested-Deving-1896) | 53 |
 | [@renovate[bot]](https://github.com/apps/renovate) | 51 |
 | [@MasWho](https://github.com/MasWho) | 34 |
 | [@stgraber](https://github.com/stgraber) | 6 |
@@ -100,7 +100,7 @@ _No additional resource files found._
 ## Accessibility
 
 <!-- AI:start:accessibility -->
-No  was found when this README was generated. Check the
+No `accessibility-report.json` was found when this README was generated. Check the
 [Actions tab](https://github.com/Interested-Deving-1896/incus-ui-canonical/actions) for repository-specific checks, and document an
 accessibility status only when a report or workflow provides evidence for it.
 
